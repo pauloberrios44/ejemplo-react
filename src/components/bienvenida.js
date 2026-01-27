@@ -1,22 +1,33 @@
 import react from 'react';
+import CarouselPrincipal from './card';
+import CardProducto from './card';
 
 function Bienvenida() {
 
-    const nombreAlumno = 'Andres Lopez';
-    const edad = 12;
-
     return (
-        <div className='row mt-3'>
-            <div className='col-xl-6'>
-                <h2>Titulo principal</h2>
-                <h4>{nombreAlumno}</h4>
-                <p>La edad del alumno es: {edad}</p>
+        <div>
+            <div className='row'>
+                <div className='col-xl-12'>
+                    <h2 className='text-center'>Productos destacados</h2>
+                </div>
             </div>
 
-            <div className='col-xl-6'>
-                <p>ldu sisaoisapiosaiodsaoiasioaspiodusaodiusapdiuas doisuadopuidouia</p>
+            <div className='row'>
+                <div className='col-xl-3'>
+                    <CardProducto titulo='Notebook Gamer Nitro 5' desc='Gaming F16 Intel Core 5'/>
+                </div>
+                <div className='col-xl-3'>
+                    <CardProducto titulo='Notebook Gamer Asus TUF' desc='Gaming Ultra AMD Ryzen 7'/>
+                </div>
+                <div className='col-xl-3'>
+                    <CardProducto titulo='Notebook Gamer HP Proliant' desc='Intel Core 9+'/>
+                </div>
+                <div className='col-xl-3'>
+                    <CardProducto titulo='Notebook Gamer HP Proliant' desc='Intel Core 9+'/>
+                </div>
             </div>
         </div>
+
     );
 
 }
