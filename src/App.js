@@ -1,19 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Bienvenida from './components/bienvenida';
-import NavBarPrincipal from './components/navbar';
-import CarouselPrincipal from './components/carousel';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Productos from './pages/products';
 
 function App() {
 
   return (
-    <div>
-      <NavBarPrincipal/>
-      <CarouselPrincipal/>
-      <div className='container'>
-        <Bienvenida />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/productos' element={<Productos/>}></Route>
+      </Routes>
+    </Router>
   );
 }
 

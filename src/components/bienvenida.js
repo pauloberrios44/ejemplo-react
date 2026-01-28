@@ -14,7 +14,7 @@ function Bienvenida() {
 
             <div className='row'>
                 <div className='col-xl-3'>
-                    <CardProducto titulo='Notebook Gamer Nitro 5' desc='Gaming F16 Intel Core 5'/>
+                    <CardProducto titulo='Notebook Gamer Nitro 5' desc='Gaming F16 Intel Core 5' ruta='/images/notebook1.jpg'/>
                 </div>
                 <div className='col-xl-3'>
                     <CardProducto titulo='Notebook Gamer Asus TUF' desc='Gaming Ultra AMD Ryzen 7'/>

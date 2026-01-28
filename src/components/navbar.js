@@ -5,7 +5,7 @@ function NavBarPrincipal() {
     return (
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#"><img src='/images/pcfactory-logotipo-oscuro.svg' style={{width: '150px'}}></img></a>
+                <a className="navbar-brand" href="/"><img src='/images/pcfactory-logotipo-oscuro.svg' style={{width: '150px'}}></img></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                 </button>
@@ -16,7 +16,7 @@ function NavBarPrincipal() {
                                 Categorías
                             </a>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
+                                <li><a className="dropdown-item" href="/productos">Productos</a></li>
                                 <li><a className="dropdown-item" href="#">Another action</a></li>
                                 <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Something else here</a></li>
